@@ -1,24 +1,33 @@
-# Landing Page
+# B&O Landing Page
 
-> ❗❗ You will complete this task in the **Landing** topic.
-> Now just choose a design and do the parts from the videos.
-> Note: in the first task of this topic you will find 4 examples of landing pages. Choose **only one** of them and create your page.
+A mobile-first product landing page built with plain HTML and SCSS, using BEM blocks. The page is coded from the provided **B&O** design in Figma.
 
-Choose a design for your landing page:
+**Live demo:** https://pobedasg.github.io/layout_landing-page/
 
-- [MET landing](https://www.figma.com/file/lSR1m42L9YwzQwzzxKwHpw/THE-MET)
-- [MYBIKE landing](https://www.figma.com/file/NZQAIydtHo5QkINyGLHNcq/BIKE-New-Version?node-id=0%3A1)
-- [B&O](https://www.figma.com/file/DtkQmQ797hk0nI4KfMi2Uq/BOSE-New-Version?type=design&node-id=6817-212&t=ZTV6Gl8NzaWkJ4FK-0)
-- [Nothing](https://www.figma.com/file/DtkQmQ797hk0nI4KfMi2Uq/BOSE-New-Version?type=design&node-id=6802-139&t=L7eKz5YKLN0m5WxR-0)
+## What's inside
 
-Follow the instructions in this and next lessons to implement the page block by block:
+- Mobile-first layout with tablet and desktop breakpoints (SCSS mixins `on-tablet` and `on-desktop`)
+- Sections: top bar, header with a navigation menu, product, categories, recommended items, about, contacts and footer
+- Hover and transition effects in CSS
+- Contact form with built-in HTML5 validation (`required`, `type="email"`)
+- Styles split into BEM blocks (`src/styles/blocks`) with shared variables and mixins
 
-- Here is [the design from the video](https://www.figma.com/file/DtkQmQ797hk0nI4KfMi2Uq/BOSE-New-Version?type=design&node-id=6703-88&t=L7eKz5YKLN0m5WxR-0) (❗❗ DO NOT implement this design ❗❗ choose one of the options above ❗❗ ☝️)
-- Start writing styles in the `main.scss` file. It is be explained in the `Sass` lesson.
-- **DON'T** try to do it `Pixel Perfect` - implement it the most `simple` way so it looks similar.
-- When done check yourself using the [CHECKLIST](./checklist.md) when finished.
-- Deploy and create a Pull Request with a [DEMO LINK](https://<your_account>.github.io/layout_landing-page/).
+There is no JavaScript logic in this project: it is a layout exercise.
 
-# Tips & Hints
-- Check `background-image: url()` to be relative to the `main.scss`. So should start with `../images`.
-- If some points from the checklist are not relevant to your design, just skip it.
+## Tech stack
+
+HTML5 · SCSS · BEM · Parcel
+
+## Run locally
+
+```bash
+git clone https://github.com/Pobedasg/layout_landing-page.git
+cd layout_landing-page
+git checkout develop
+npm install
+npm start
+```
+
+## About this project
+
+This is a Mate academy course project, so the repository started from their template (lint and deploy scripts come from it). The markup and styles in `src/` are mine. The design is from the course materials.
